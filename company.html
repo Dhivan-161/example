@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechNova</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:#0f172a;
+    color:white;
+}
+.navbar{
+    transition:0.4s;
+}
+.navbar.transparent{
+    background:transparent !important;
+}
+.navbar.scrolled{
+    background:#020617 !important;
+    box-shadow:0 4px 20px rgba(0,0,0,.6);
+}
+.hero{
+    height:100vh;
+}
+.carousel-item{
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.6);
+}
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:2;
+}
+.btn-custom{
+    background:linear-gradient(45deg,#22c55e,#06b6d4);
+    border:0;
+    color:#fff;
+    padding:10px 24px;
+}
+.card img{
+    height:160px;
+    object-fit:cover;
+}
+.card{
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(34,197,94,.5);
+}
+footer{
+    background:#020617;
+}
+.team-card img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #22c55e;
+    margin-top:20px;
+}
+.team-card{
+    background:#020617;
+    border-radius:12px;
+    transition:0.3s;
+}
+.team-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(34,197,94,.5);
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">TechNova</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#heroCarousel">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-custom" href="#contact">Get</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="heroCarousel" class="carousel slide hero" data-bs-ride="carousel" data-bs-interval="4000">
+<div class="carousel-indicators">
+<button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+<button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+<button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active" style="background-image:url('hero.jpg')">
+<div class="overlay"></div>
+<div class="center">
+<h1>We Build The Future</h1>
+<p>Innovative digital solutions</p>
+<button class="btn btn-custom">Get Started</button>
+</div>
+</div>
+<div class="carousel-item" style="background-image:url('ai.jpg')">
+<div class="overlay"></div>
+<div class="center">
+<h1>AI Solutions</h1>
+<p>Smart automation & analytics</p>
+<button class="btn btn-custom">Explore</button>
+</div>
+</div>
+<div class="carousel-item" style="background-image:url('cloud.jpg')">
+<div class="overlay"></div>
+<div class="center">
+<h1>Cloud Services</h1>
+<p>Scalable & secure infrastructure</p>
+<button class="btn btn-custom">Learn More</button>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+<section id="services" class="container py-5">
+<h2 class="text-center mb-4">Our Services</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card bg-dark text-white">
+<img src="web.jpg" alt="Web Development">
+<div class="card-body text-center">
+<h5>Web Development</h5>
+<p>Modern responsive websites</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card bg-dark text-white">
+<img src="app.jpg" alt="App Development">
+<div class="card-body text-center">
+<h5>App Development</h5>
+<p>Android & iOS applications</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card bg-dark text-white">
+<img src="cloud1.jpg" alt="Cloud Services">
+<div class="card-body text-center">
+<h5>Cloud Services</h5>
+<p>Reliable cloud infrastructure</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="team" class="container py-5">
+<h2 class="text-center mb-4">Our Team</h2>
+<p class="text-center text-secondary mb-5">
+Meet the people who make TechNova innovative 
+</p>
+<div class="row g-4 justify-content-center">
+<div class="col-md-4">
+<div class="team-card text-center p-4">
+<img src="s.jpg" alt="CEO">
+<h5 class="mt-3"></h5>
+<p class="text-secondary mb-1">Founder & CEO</p>
+<small>Vision & Strategy</small>
+</div>
+</div>
+<div class="col-md-4">
+<div class="team-card text-center p-4">
+<img src="sisa.jpg" alt="CTO">
+<h5 class="mt-3">Siva Sanjay</h5>
+<p class="text-secondary mb-1">CTO</p>
+<small>AI & Cloud Architect</small>
+</div>
+</div>
+<div class="col-md-4">
+<div class="team-card text-center p-4">
+<img src="Dhivan.jpg" alt="Lead Developer">
+<h5 class="mt-3">Dhivan</h5>
+<p class="text-secondary mb-1">Lead Developer</p>
+<small>Web & App Solutions</small>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="container pb-5 text-center">
+<h2 class="mb-3">Contact Us</h2>
+<div class="row justify-content-center">
+<div class="col-md-6">
+<input class="form-control mb-2" placeholder="Name">
+<input class="form-control mb-2" placeholder="Email">
+<textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
+<button class="btn btn-custom w-100">Send Message</button>
+</div>
+</div>
+</section>
+<footer class="text-center p-3">
+© 2026 TechNova | All Rights Reserved
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+window.addEventListener("scroll",()=>{
+    const nav=document.querySelector(".navbar");
+    nav.classList.toggle("scrolled",window.scrollY>50);
+});
+</script>
+</body>
+</html>

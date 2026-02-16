@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhivan S | Portfolio</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+      transition: 0.3s;
+    }
+    .dark{
+      background:#121212;
+      color:#f4f4f4;
+    }
+    .hero{
+      height:100vh;
+      background:linear-gradient(120deg,#000000,#00f2fe);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+    .section-padding{
+      padding:80px 0;
+    }
+    .dark .bg-light,
+    .dark .card,
+    .dark .navbar{
+      background:#1e1e1e !important;
+      color:white;
+    }
+    .timeline{
+      border-left:3px solid #4facfe;
+      padding-left:20px;
+    }
+    .card-img-top{
+      height:180px;
+      object-fit:contain;
+      padding:15px;
+    }
+    .navbar-brand{
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">DHIVAN S</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <button class="btn btn-sm" id="theme-btn">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <h1 class="display-4 fw-bold">Hi, I'm Dhivan S</h1>
+    <p class="lead">Front-End Developer | UI/UX Designer | IoT Enthusiast</p>
+    <a href="DHIVAN CV .pdf" class="btn btn-light rounded-pill fw-bold" download>Download Resume</a>
+  </div>
+</section>
+
+
+<section id="about" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+Pre-final year B.E. Computer Science and Engineering student with hands-on experience and continuous learning in
+frontend web development. Skilled in building responsive, user-friendly, and visually appealing web interfaces using
+HTML, CSS, and JavaScript. Familiar with UI/UX principles and modern development tools to create clean and
+efficient designs. Highly motivated, quick learner, and eager to grow as a frontend developer while contributing to
+innovative and impactful web projects.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <<img src="sullan.jpg" class="img-fluid rounded-circle" alt="Dhivan">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row g-3 text-center">
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100">
+          <img src="html.png" class="card-img-top" alt="HTML">
+          <div class="card-body"><h6>HTML</h6></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100">
+          <img src="css.png" class="card-img-top" alt="CSS">
+          <div class="card-body"><h6>CSS</h6></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100">
+          <img src="js.png" class="card-img-top" alt="JavaScript">
+          <div class="card-body"><h6>JavaScript</h6></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100">
+          <img src="boot.png" class="card-img-top" alt="React">
+          <div class="card-body"><h6>React.js</h6></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="smart.png" class="card-img-top" alt="Dustbin">
+          <div class="card-body">
+            <h5>Smart Dustbin Monitoring</h5>
+            <p>IoT-based waste monitoring dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="bus.png" class="card-img-top" alt="Bus">
+          <div class="card-body">
+            <h5>IoT College Bus Tracking</h5>
+            <p>Real-time GPS tracking system.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="agri.png" class="card-img-top" alt="Agro">
+          <div class="card-body">
+            <h5>Agro-Connect</h5>
+            <p>Farmer-to-MSME web platform.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="timeline" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-4">Education & Experience</h2>
+    <div class="timeline">
+      <div class="mb-3">
+        <h5>2023 - Present</h5>
+        <p>B.E Computer Science</p>
+      </div>
+      <div>
+        <h5>2024</h5>
+        <p>Internet of Things internship</p>
+        <h5>2025</h5>
+        <p>Front-End Development internship</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="certificates" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Certificates</h2>
+    <div class="row g-3 text-center">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="frontend.png" class="card-img-top" alt="Frontend">
+          <div class="card-body"><h6>Front-End Development internship</h6></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="cyber.png" class="card-img-top" alt="Cyber">
+          <div class="card-body"><h6>Cyber Security essential</h6></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="smart.jpg" class="card-img-top" alt="IoT">
+          <div class="card-body"><h6>IoT internship</h6></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form class="w-50 mx-auto">
+      <input type="text" class="form-control mb-3" placeholder="Your Name">
+      <input type="email" class="form-control mb-3" placeholder="Your Email">
+      <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+      <button class="btn btn-primary w-100">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center p-3">
+  © 2026 Dhivan S | All Rights Reserved
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const themeBtn = document.getElementById("theme-btn");
+themeBtn.onclick = () => {
+  document.body.classList.toggle("dark");
+  themeBtn.textContent =
+    document.body.classList.contains("dark") ? "☀️" : "🌙";
+};
+</script>
+
+</body>
+</html>
